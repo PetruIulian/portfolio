@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* no breakpoints needed */
+body {
+  background: #111727;
+  color: #dadfe5;
+  font-family: "Roboto";
+}
+
+.project img {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.aeroguard-pic {
+  width: 400px;
+  height: 200px;
+}
+
+.project-link {
+  color: #00bfff;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.blackjack-pic {
+  width: 650px;
+  height: 200px;
+}
+
+.lf-turbo-pic {
+  width: 400px;
+  height: 200px;
+}
+
+.description {
+  font-weight: 500;
+}
+
+.evidenta-smile-pic {
+  width: 430px;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  gap: 6rem;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  height: 3rem;
+}
+
+.me {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: auto;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.navbar ul li:hover {
+  color: #fff;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project {
+  background: #1d2738;
+  border-radius: 0.5rem;
+  width: 60%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bright-blue {
+  color: #00bfff;
+}
+
+/* no breakpoints needed */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+/* breakpoints needed */
+
+@media only screen and (min-width: 1920px) {
+  .presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 30%;
+  }
+  .lf-turbo-pic {
+    width: 600px;
+    height: 200px;
+  }
+  .blackjack-pic {
+    width: 1000px;
+    height: 200px;
+  }
+
+  .evidenta-smile-pic {
+    width: 650px;
+    height: 200px;
+  }
+  .aeroguard-pic {
+    width: 650px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  .presentation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 130%;
+    justify-items: center;
+  }
+
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .blackjack-pic {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  /* Styles for small desktops */
+  .presentation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .blackjack-pic {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .presentation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .blackjack-pic {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for landscape tablets */
+  .presentation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .blackjack-pic {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for large smartphones / small tablets */
+  .presentation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .blackjack-pic {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles for medium smartphones */
+  .presentation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .blackjack-pic {
+    width: 300px;
+    height: 200px;
+  }
+  .aeroguard-pic {
+    width: 300px;
+    height: 200px;
+  }
+  .lf-turbo-pic {
+    width: 300px;
+    height: 200px;
+  }
+  .evidenta-smile-pic {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for small smartphones */
+  .presentation {
+    margin: 2%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+  .project {
+    background: #1d2738;
+    border-radius: 0.5rem;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .blackjack-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .aeroguard-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .lf-turbo-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .evidenta-smile-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .logo {
+    margin: 1rem;
+  }
+}
+/* breakpoints needed */
